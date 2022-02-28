@@ -21,4 +21,6 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 3. DLL Hijacking
 4. Memory Patching
 5. Ofuscación con Chimera
-[Heading IDs](#heading-ids)
+
+
+[Método Reflection de Matt Graeber](#reflection)
