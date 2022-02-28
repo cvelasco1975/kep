@@ -24,3 +24,9 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 
 
 [Método Reflection de Matt Graeber](#reflection)
+
+```powershell
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
