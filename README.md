@@ -1,7 +1,3 @@
----
-title: "Example Page"
-author: "Carlos Velasco"
----
 # Bypass-AMSI
 Estudio de la Protección AMSI de Windows
 
