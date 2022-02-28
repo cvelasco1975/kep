@@ -22,6 +22,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 4. Memory Patching
 5. Ofuscación con Chimera
 
+### My Great Heading {#custom-id}
 
 [Método Reflection de Matt Graeber](#reflection)
 
