@@ -1,3 +1,6 @@
+title: "Example Page"
+author: "Mary Marple"
+
 # Bypass-AMSI
 Estudio de la Protección AMSI de Windows
 
