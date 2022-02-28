@@ -17,14 +17,12 @@ Se dejaron por fuera técnicas que ya han sido parchadas o que utilicen ejecutab
 Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramienta de ofuscaión como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
 
 [1. Método Reflection de Matt Graeber](#reflection)
-2. Error Forzado
+[2. Error Forzado](#ferror)
 3. DLL Hijacking
-4. Memory Patching
+[4. Memory Patching](#patching)
 5. Ofuscación con Chimera
 
 ### Método Reflection de Matt Graeber {#reflection}
-
-[Método Reflection de Matt Graeber](#reflection)
 
 <details><summary>Ver Script</summary>
 <p>
@@ -35,7 +33,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
  </p>
 </details>
 
-[Error Forzado](#ferror)
+### Error Forzado {#ferror}
 
 <details><summary>Ver Script</summary>
 <p>
@@ -50,7 +48,7 @@ $field.SetValue($null,$true)
 </details>
 
 
-[Memory Patching](#rastamouse)
+### Memory Patching {#patching}
 
 <details><summary>Ver Script</summary>
 <p>
