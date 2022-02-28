@@ -22,7 +22,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 4. [Memory Patching](#patching)
 5. Ofuscación con Chimera
 
-### Método Reflection de Matt Graeber {#reflection}
+## Método Reflection de Matt Graeber {#reflection}
 
 <details><summary>Ver Script</summary>
 <p>
@@ -33,7 +33,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
  </p>
 </details>
 
-### Error Forzado {#ferror}
+## Error Forzado {#ferror}
 
 <details><summary>Ver Script</summary>
 <p>
@@ -48,7 +48,7 @@ $field.SetValue($null,$true)
 </details>
 
 
-### Memory Patching {#patching}
+## Memory Patching {#patching}
 
 <details><summary>Ver Script</summary>
 <p>
