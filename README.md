@@ -20,7 +20,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 2. [Error Forzado](#Error-Forzado "Goto Error-Forzado")
 3. [DLL Hijacking](#DLL-Hijacking "goto DLL-Hijacking")
 4. [Memory Patching](#Memory-Patching "Goto Memory-Patching")
-5. Ofuscación con Chimera
+5. [Ofuscación con Chimera](#Ofuscación-con-Chimera "Goto Ofuscación-con-Chimera")
 
 ## Método Reflection de Matt Graeber ##
 
@@ -86,3 +86,6 @@ $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 ```
 </p>
 </details>
+
+## Ofuscación con Chimera ##
+
