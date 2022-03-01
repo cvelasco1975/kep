@@ -1,6 +1,6 @@
 # Evasión de AMSI #
 
-Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
+Este repositorio contiene algunos métodos de evasión de AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
 
 - Windows 10
 - Windows 11
