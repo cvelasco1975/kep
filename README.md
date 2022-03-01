@@ -21,7 +21,6 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 3. DLL Hijacking
 4. [Memory Patching](#Memory-Patching "Goto Memory-Patching")
 5. Ofuscación con Chimera
-6. [Modified version of 3. Amsi ScanBuffer - no CSC.exe compilation](#Modified-Amsi-ScanBuffer-Patch "Goto Modified-Amsi-ScanBuffer-Patch")
 
 ## Método Reflection de Matt Graeber ##
 
