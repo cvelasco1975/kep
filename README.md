@@ -1,4 +1,4 @@
-# Bypass-AMSI #
+# Bypaseando AMSI #
 Estudio de la Protección AMSI de Windows
 
 Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
