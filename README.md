@@ -10,9 +10,9 @@ Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado
 
 Todos en sus versión nás reciente para el momento (21H2) y probados en PowerShell 5.1 como en 7.2
 
-<p style='text-align: justify;'>Se dejaron de lado técnicas que ya han sido parchadas o que utilicen ejecutables o DLL modificadas debido a que, con el pasar del tiempo, las firmas de estos archivos son detectados por los antivirus; por esta razón se privilegiaron aquellas técnicas que puedan ser ejecutadas en memoria y con un usuario estándar lo cuales pueden ser útiles en un escenario de post explotación.</p>
+Se dejaron de lado técnicas que ya han sido parchadas o que utilicen ejecutables o DLL modificadas debido a que, con el pasar del tiempo, las firmas de estos archivos son detectados por los antivirus; por esta razón se privilegiaron aquellas técnicas que puedan ser ejecutadas en memoria y con un usuario estándar lo cuales pueden ser útiles en un escenario de post explotación.
 
-Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramienta de ofuscaión como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
+Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramientas de ofuscación como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
 
 1. [Metodo Reflection de Matt Graeber (base64)](#Método-Reflection-de-Matt-Graeber-(base64) "Goto Método-Reflection-de-Matt-Graeber-(base64)")
 2. [Error Forzado](#Error-Forzado "Goto Error-Forzado")
