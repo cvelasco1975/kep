@@ -1,4 +1,4 @@
-# Bypass-AMSI
+# Bypass-AMSI #
 Estudio de la Protección AMSI de Windows
 
 Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
@@ -16,15 +16,14 @@ Se dejaron por fuera técnicas que ya han sido parchadas o que utilicen ejecutab
 
 Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramienta de ofuscaión como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
 
-1. (#Metodo Reflection de Matt Graeber)
-2. [Metodo Reflection de Matt Graeber](#Metodo Reflection de Matt Graeber "Goto Metodo Reflection de Matt Graeber")
-3. [Error Forzado](#ferror)
-4. DLL Hijacking
-5. [Memory Patching](#patching)
-6. Ofuscación con Chimera
-7. [Modified version of 3. Amsi ScanBuffer - no CSC.exe compilation](#Modified-Amsi-ScanBuffer-Patch "Goto Modified-Amsi-ScanBuffer-Patch")
+1. [Metodo Reflection de Matt Graeber](#Método-Reflection-de-Matt-Graeber "Goto Método-Reflection-de-Matt-Graeber")
+2. [Error Forzado](#ferror)
+3. DLL Hijacking
+4. [Memory Patching](#patching)
+5. Ofuscación con Chimera
+6. [Modified version of 3. Amsi ScanBuffer - no CSC.exe compilation](#Modified-Amsi-ScanBuffer-Patch "Goto Modified-Amsi-ScanBuffer-Patch")
 
-## Método Reflection de Matt Graeber {#reflection}
+# Método Reflection de Matt Graeber #
 
 <details><summary>Ver Script</summary>
 <p>
