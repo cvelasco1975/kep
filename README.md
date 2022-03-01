@@ -23,7 +23,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 ## Método Reflection de Matt Graeber (base64) ##
 
 | **Interfaz** | **Win 10** | **Win 11** | **Win 2016** | **Win 2019** | **Win 2022** |
-|--------------|------------|------------|--------------|--------------|--------------|
+|--------------|:----------:|:----------:|:------------:|:------------:|:------------:|
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
 | ![](https://img.shields.io/badge/PowerShell-7-orange) | ![](https://img.shields.io/badge/-Fall%C3%B3-red) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen)
 
