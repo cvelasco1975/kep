@@ -140,6 +140,8 @@ Copy-Item -Path C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Desti
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen)
 
+Esta es quizás la técnica más poderosa de bypass actualmente. El objetivo es parchear función AmsiScanBuffer, esta función obtiene el buffer requerido para ser escaneado y la longitud del buffer. Todo lo que hay que hacer es parchear el registro dentro de la función que contiene la longitud del buffer. Al hacerlo, el escaneo se ejecutará con una longitud de 0. Devolver 0 es igual a S_OK y S_OK significa que la función ha "escaneado la carga útil" con éxito. Esta técnica en realidad no se está haciendo un bypass de AMSI, simplemente lo deshabilta. 
+
 <details><summary>Ver Script</summary>
 <p>
 
