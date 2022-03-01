@@ -20,7 +20,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 4. [Memory Patching](#Memory-Patching "Goto Memory-Patching")
 5. [Ofuscación con Chimera](#Ofuscación-con-Chimera "Goto Ofuscación-con-Chimera")
 
-## Método Reflection de Matt Graeber (base64)##
+## Método Reflection de Matt Graeber (base64) ##
 
 | **Win 10** | **Win 11** | **Win 2016** | **Win 2019** | **Win 2022** |
 |------------|------------|--------------|--------------|--------------|
