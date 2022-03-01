@@ -117,7 +117,8 @@ BOOL APIENTRY DllMain(HMODULE hModule,
  </p>
 </details>
 
-Una vez copiado el archivo, ejecuta el siguiente còdigo en PowerShell:
+Una vez copiado el archivo, ejecuta el siguiente código en PowerShell:
+
 ````PowerShell
 Copy-Item -Path C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Destination $pwd
 & "$pwd\powershell.exe"
