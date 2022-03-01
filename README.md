@@ -23,7 +23,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 5. Ofuscación con Chimera
 6. [Modified version of 3. Amsi ScanBuffer - no CSC.exe compilation](#Modified-Amsi-ScanBuffer-Patch "Goto Modified-Amsi-ScanBuffer-Patch")
 
-# Método Reflection de Matt Graeber #
+## Método Reflection de Matt Graeber ##
 
 <details><summary>Ver Script</summary>
 <p>
