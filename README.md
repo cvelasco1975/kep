@@ -1,4 +1,4 @@
-# Evasión AMSI #
+# Evasión de AMSI #
 
 Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
 
