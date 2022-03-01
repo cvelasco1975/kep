@@ -45,6 +45,8 @@ Fabian Mosh, utilizando un antiguo bypass de AMSI de Matt Graeber (Reflection me
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red)
 
+Aunque originalmente esto fue revelado por Matt Graeber y posteriormente bloqueado por Microsoft. Si se evita utilizar directamente las cadenas con el uso de variables y sin necesidad de ofuscación se puede evadir el AMSI con el mismo método:
+
 <details><summary>Ver Script</summary>
 <p>
  
