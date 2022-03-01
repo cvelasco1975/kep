@@ -14,13 +14,13 @@ Se dejaron por fuera técnicas que ya han sido parchadas o que utilicen ejecutab
 
 Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramienta de ofuscaión como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
 
-1. [Metodo Reflection de Matt Graeber](#Método-Reflection-de-Matt-Graeber "Goto Método-Reflection-de-Matt-Graeber")
+1. [Metodo Reflection de Matt Graeber (base64)](#Método-Reflection-de-Matt-Graeber-(base64) "Goto Método-Reflection-de-Matt-Graeber-(base64)")
 2. [Error Forzado](#Error-Forzado "Goto Error-Forzado")
 3. [DLL Hijacking](#DLL-Hijacking "goto DLL-Hijacking")
 4. [Memory Patching](#Memory-Patching "Goto Memory-Patching")
 5. [Ofuscación con Chimera](#Ofuscación-con-Chimera "Goto Ofuscación-con-Chimera")
 
-## Método Reflection de Matt Graeber ##
+## Método Reflection de Matt Graeber (base64)##
 
 | **Win 10** | **Win 11** | **Win 2016** | **Win 2019** | **Win 2022** |
 |------------|------------|--------------|--------------|--------------|
