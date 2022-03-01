@@ -221,3 +221,4 @@ Para ofuscarlo debemos ejectar el siguiente comando (sin -b) e ir probando el re
 ```bash
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
  ```
+Otra opción es utilizar [AMSITrigger](https://github.com/RythmStick/AMSITrigger/releases) para encontrar funciones o cadenas que activen AMSI y agreagarlas al paràmetro -b
