@@ -38,6 +38,11 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 
 ## Error Forzado ##
 
+| **Interfaz** | **Win 10** | **Win 11** | **Win 2016** | **Win 2019** | **Win 2022** |
+|--------------|:----------:|:----------:|:------------:|:------------:|:------------:|
+| ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
+| ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red)
+
 <details><summary>Ver Script</summary>
 <p>
  
