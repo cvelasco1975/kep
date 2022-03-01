@@ -17,7 +17,7 @@ Se dejaron por fuera técnicas que ya han sido parchadas o que utilicen ejecutab
 Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomiendo usar herramienta de ofuscaión como [Chimera](https://github.com/tokyoneon/Chimera) o [Invoke-Stelth](https://github.com/JoelGMSec/Invoke-Stealth).
 
 1. [Metodo Reflection de Matt Graeber](#Método-Reflection-de-Matt-Graeber "Goto Método-Reflection-de-Matt-Graeber")
-2. [Error Forzado](#ferror)
+2. [Error Forzado](#Error-Forzado "Goto Error-Forzado")
 3. DLL Hijacking
 4. [Memory Patching](#patching)
 5. Ofuscación con Chimera
@@ -34,7 +34,7 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
  </p>
 </details>
 
-## Error Forzado {#ferror}
+## Error Forzado ##
 
 <details><summary>Ver Script</summary>
 <p>
