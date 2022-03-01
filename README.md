@@ -47,7 +47,7 @@ $field.SetValue($null,$true)
 
 ## DLL Hijacking ##
 
-<details><summary>Ver Script</summary>
+<details><summary>Código de la amsi.dll falsa</summary>
 <p>
  
 ````C++
