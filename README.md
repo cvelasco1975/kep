@@ -105,6 +105,11 @@ BOOL APIENTRY DllMain(HMODULE hModule,
  </p>
 </details>
 
+````PowerShell
+Copy-Item -Path C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Destination $pwd
+& "$pwd\powershell.exe"
+````
+
 ## Memory Patching ##
 
 <details><summary>Ver Script</summary>
