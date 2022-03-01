@@ -1,5 +1,4 @@
-# Bypaseando AMSI #
-Estudio de la Protección AMSI de Windows
+# Evasión AMSI #
 
 Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado, fueron probados en los siguiewntes sistemas operativos:
 
@@ -8,7 +7,6 @@ Este repositorio contiene algunos métodos de evasión en AMSI que he encontrado
 - Windows Server 2016
 - Windows Server 2019
 - Windows Server 2022
-
 
 Todos en sus versión nás reciente para el momento (21H2) y probados en PowerShell 5.1 como en 7.2
 
