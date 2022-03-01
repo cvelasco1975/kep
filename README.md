@@ -27,6 +27,8 @@ Estos scripts podrían ser detectados por AMSI en el futuro. Por lo que recomien
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red)
 
+Fabian Mosh, utilizando un antiguo bypass de AMSI de Matt Graeber (Reflection method) pudo demostrar que si se utiliza la codificación Base64 en las cadenas (AmsiUtils & amsiInitFailed) que activan AMSI y se decodifican en tiempo de ejecución:
+
 <details><summary>Ver Script</summary>
 <p>
  
