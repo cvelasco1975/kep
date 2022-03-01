@@ -57,7 +57,7 @@ $field.SetValue($null,$true)
 | ![](https://img.shields.io/badge/PowerShell-5-blue) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Funciona!-brightgreen) | ![](https://img.shields.io/badge/-Falla-red) 
 | ![](https://img.shields.io/badge/PowerShell-7-blueviolet) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red) | ![](https://img.shields.io/badge/-Falla-red)
 
-Para hacerlo funcionar deben copiar la [amsi.dll](amsi.dll) que está en el repositorio (está compilada para x64). Si deseas compilar tu propia DLL abajo tienen el código fuente:
+Para hacerlo funcionar deben copiar la [amsi.dll](amsi.dll) que está en el repositorio (está compilada para x64). Si deseas compilar tu propia DLL abajo tienen el código fuente o directamente aquí [amsi.cpp](amsi.cpp):
 <details><summary>Código de la amsi.dll falsa</summary>
 <p>
  
