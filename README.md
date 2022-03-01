@@ -209,13 +209,12 @@ Para ofuscarlo debemos ejecutar el siguiente comando (sin -b) e ir probando el r
 -l: Nivel 1 a 5 (no recomiendo colocarlo en 5)<br>
 -f: Archivo de entrada.<br>
 -o: Archivo de salida.<br>
--v: Substituir nombres de variables.<br>
--t: Substuir tipos de datos.<br>
--j: Substituir nombres de funciones.<br>
+-v: Sustituir nombres de variables.<br>
+-t: Sustituir tipos de datos.<br>
+-j: Sustituir nombres de funciones.<br>
 -i: Insertar comentarios arbitrarios.<br>
 -c: Replazar comentarios con datos arbitrarios.<br>
--h: Convertir direcciones IP addresses a hexadecimal.<br>
--s: Substitute various strings.<br>
+-h: Convertir direcciones IP a hexadecimal.<br>
 -b: Marcado de palabras (importante).<br><br>Quedando finalmente:
 
 ```bash
