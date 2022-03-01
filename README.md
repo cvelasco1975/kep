@@ -143,7 +143,7 @@ $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 
 ## Ofuscación con Chimera ##
 
-<details><summary>Código PowerShell sin ofuscar</summary>
+<details><summary>Reverse Shell en PowerShell sin ofuscar</summary>
 <p>
 
 ```PowerShell
